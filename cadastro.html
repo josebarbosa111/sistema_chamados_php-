@@ -10,35 +10,35 @@
 </head>
 <body>
   <div class="form-container">
-    <form>
+    <form action="php/cad_usuario.php" method="post">
       <div class="row mb-3">
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required />
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required />
         </div>
         <div class="col-md-6">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required />
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required />
         </div>
       </div>
       <div class="row mb-3">
         <div class="col-md-6">
           <label for="senha" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required />
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required />
         </div>
         <div class="col-md-6">
           <label for="confirmarSenha" class="form-label">Confirmar senha</label>
-          <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required />
+          <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required />
         </div>
       </div>
       <div class="row mb-4">
         <div class="col-md-6">
           <label for="celular" class="form-label">Celular</label>
-          <input type="tel" class="form-control" id="celular" placeholder="Digite seu celular" required />
+          <input type="tel" class="form-control" id="celular" name="celular" placeholder="Digite seu celular" required />
         </div>
         <div class="col-md-6">
           <label for="setor" class="form-label">Setor</label>
-          <input type="text" class="form-control" id="setor" placeholder="Digite seu setor" required />
+          <input type="text" class="form-control" id="setor" name="setor" placeholder="Digite seu setor" required />
         </div>
       </div>
       <button type="submit" class="btn btn-cadastrar">Cadastrar</button>
