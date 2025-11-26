@@ -11,7 +11,7 @@ $setor = $_POST['setor'];
 include 'conexao.php';
 
 //instrução sql para inserir os dados
-$insert = "INSERT INTO tb_usuario VALUE (null, '$nome', '$email ', '$senha','$celular','$setor')";
+$insert = "INSERT INTO tb_usuario VALUE (null, '$nome', '$email', '$senha','$celular','$setor')";
 
 //executar a instrução sql dentro do banco utilizando a função query()
 
