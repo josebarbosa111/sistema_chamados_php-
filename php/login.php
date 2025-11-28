@@ -23,6 +23,17 @@ $email_banco = $resultado ['email'];
 $senha_banco = $resultado ['senha'];
 
 
+if ($email == $email_banco && $senha == $senha_banco) {
+    session_start();
+    $_SESSION['id_usuario'] = $resultado ['id'];
+    $_SESSION['nm_usuario'] = $resultado ['nm_usuario'];
+    header('location: ../home.php');
+
+}else {
+
+    echo "<script> alert('Usuario ou senha invalida!'); history.back() </script>";
+
+}
 
 
 

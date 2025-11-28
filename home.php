@@ -14,8 +14,19 @@
       <span>Menu</span>
     </div>
     <div class="user-info" title="Sair">
-      Olá, Jose Carlos
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <?php 
+        session_start();
+        if (isset($_SESSION['id_usuario'])) {
+          $nome_usuarios = $_SESSION['id_usuario'];
+          echo "Olá, ". $nome_usuarios;
+
+        }else {
+
+          echo "<script> alert('Você não está logado!') history.back(); </script>";
+
+        }   
+        ?>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M16 13v-2H7V8l-5 4 5 4v-3zM18 19h-2v-2h2v-2h-2v-2h2v-2h-2V5h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2Z"/>
       </svg>
     </div>
